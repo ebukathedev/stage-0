@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Profile Card</title>
+		<link rel="stylesheet" href="style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+			rel="stylesheet"
+		/>
+		<script
+			src="https://kit.fontawesome.com/8ae1a4bc49.js"
+			crossorigin="anonymous"
+		></script>
+		<script src="main.js" defer></script>
+	</head>
+	<body>
+		<main>
+			<article class="card" data-testid="test-profile-card">
+				<!-- image -->
+				<div class="profile-container">
+					<figure class="profile-image">
+						<img
+							src="https://pbs.twimg.com/profile_images/1874042756420587520/Q-YjI4Oo_400x400.jpg"
+							alt="Profile Image"
+							data-testid="test-user-avatar"
+						/>
+					</figure>
+					<div class="details">
+						<h2 data-testid="test-user-name">Ebuka Ejiofor</h2>
+						<p data-testid="test-user-bio">
+							nyem/ego, I Code, I Eat, I Sleep
+						</p>
+					</div>
+				</div>
+				<!-- content -->
+				<div class="content-container">
+					<section class="time">
+						<div class="badge">TIme</div>
+						<div data-testid="test-user-time" id="time"> </div>
+					</section>
+					<section>
+						<div class="badge">Hobbies</div>
+						<ul data-testid="test-user-hobbies">
+							<li>Scrolling Social Media</li>
+							<li>Binging Anime</li>
+							<li>Vibe Coding</li>
+						</ul>
+					</section>
+					<section>
+						<div class="badge">Dislikes</div>
+						<ul data-testid="test-user-dislikes">
+							<li>MTN</li>
+							<li>Debit Alerts</li>
+							<li>Stress</li>
+						</ul>
+					</section>
+					<section class="socials">
+						<div class="badge">Socials</div>
+						<ul data-testid="test-user-social-links">
+							<li>
+								<a
+									href="https://github.com/ebukathedev"
+									data-testid="test-user-social-github"
+									target="_blank"
+									rel="noopener noreferrer"
+								>
+									<i class="fa-brands fa-github"></i>
+									<span>Github</span>
+								</a>
+							</li>
+							<li>
+								<a
+									href="https://www.linkedin.com/in/ebukathedev"
+									data-testid="test-user-social-linkedin"
+									target="_blank"
+									rel="noopener noreferrer"
+								>
+									<i class="fa-brands fa-linkedin"></i>
+									<span>Linkedin</span>
+								</a>
+							</li>
+							<li>
+								<a
+									href="https://twitter.com/ebukathedev"
+									data-testid="test-user-social-twitter"
+									target="_blank"
+									rel="noopener noreferrer"
+								>
+									<i class="fa-brands fa-x-twitter"></i>
+									<span>Twitter</span>
+								</a>
+							</li>
+						</ul>
+					</section>
+				</div>
+			</article>
+		</main>
+	</body>
+</html>
